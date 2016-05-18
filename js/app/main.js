@@ -14,3 +14,8 @@ requirejs.config({
     nodeRequire: require,
 		
 });
+
+var AdviserU = requirejs("./SKF.AU");
+module.exports = () => {
+  return AdviserU;
+}
