@@ -15,7 +15,12 @@ requirejs.config({
 		
 });
 
-var AdviserU = requirejs("./SKF.AU");
+
+var AdviserU;
+requirejs(["./models/SKF.AU"],function(SKF_AU){
+	AdviserU = SKF_AU;
+});
+
 module.exports = () => {
   return AdviserU;
-}
+};

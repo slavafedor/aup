@@ -1,18 +1,13 @@
-var SKF = {};
-SKF.AU = {
-	Version : "0.0.1",
-	Name : "AdviserU",
-	Author : "SKF",
+define([
+	"SKF", 
+	"models/SKF.User",
+	], function( SKF, SKF_User, ){
+	var skf = SKF;	
+	skf.AU = function (){
+		var me = this;
+		
+		me.currentUser = 
+	};
 	
-};
-
-Object.defineProperty(SKF.AU, "IMPORTANCE",
- {
-		Info : 0,
-		NotImportant : 1,
-		SomewhatImportant : 2,
-		Important : 3,
-		VeryImportant : 4,
-		Critical : 5
-	}
-);
+	return skf.AU;
+});
